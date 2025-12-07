@@ -1,0 +1,213 @@
+body { 
+    Background-color: #eef7eb;
+    color: #0e3609}
+
+main { background-color: #eef7eb;
+    color: #0e3609}
+
+
+/*Start of Style for Banner + Navigation Bar*/
+
+/*this is the banner section. */
+.banner {
+    background-color: #c9d4c5;
+    width: 80%;
+    margin: 20px auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;}
+
+.bannerContent{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    gap: 50px;}
+
+
+
+/* Banner logo with slogan underneath section*/
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+
+.logo{
+    width: 100px;
+    margin-bottom: 10px;}
+
+.brandSlogan{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    color:black; /* need to change font color later */
+    align-content: center; 
+    margin: 0;}
+
+/* Banner Image on right side section*/
+.bannerImage{
+    width: 50%;
+    height: 100%;
+    background-image: url(Images/BannerPicture.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;}
+
+/* Navigation Bar */
+.navBar{
+    background-color: #0E3B1F;
+    width: 80%;
+    margin: 10px auto 2px auto;
+    border-radius: 8px;
+    padding: 12px 0;}
+
+.navBar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; }
+
+.navBar a{
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease; }
+
+.navBar a:hover{
+    color:pink; }
+
+/* End of code for banner + navigation bar */
+
+
+/* Buttons on the website */
+
+.startLearning {
+    display: block;
+    width: fit-content;
+    margin: 5px auto;
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    border: 3px solid black;}
+
+.learnMore {
+    display: block;
+    width: fit-content;
+    margin: 5px auto;
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    border: 3px solid black;}
+
+.createYourRoutine {
+    display: block;
+    width: fit-content;
+    margin: 5px auto;
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    border: 3px solid black;}
+
+/* Flashcard section, with a lot of help from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card  */
+.flashcards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  width: 80%;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  perspective: 800px;
+  cursor: pointer;
+}
+
+.card div {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+  color: rgb(10, 42, 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  backface-visibility: hidden;
+  transition: transform 2s;
+  position: absolute;
+  text-align: center;
+  border: 2px solid #0e3609;
+}
+
+.card .back {
+  background-color: #fff;
+  color: #0E3B1F;
+  transform: rotateY(180deg);
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+/* Routine Section */
+
+table {
+  width: 50%;
+  margin: 40px auto;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  color:black;
+  background-color: white;
+}
+
+th {
+    border-radius: 5px;
+    background-color: #0E3B1F;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+form {
+  width: 600px;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.container ol {
+    display: inline-block;
+    text-align: left;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="banner">
+    <div class="bannerContent">
+        <div class="logoSection">
+            <img src="Images/Logo.png" alt="brand logo" class="logo">
+            <p class="brandSlogan">We aim to help you understand your skin.</p>
+        </div>
+        <div class="bannerImage"></div>
+    </div>
+</header>
+
+<nav class="navBar">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="routine.html">Routine</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" style="color: #ECD09C;">Contact us</a></li>
+        <li><a href="support.html">Support</a></li>
+        </ul>
+</nav>
+
+
+
+<main>
+<form method="get">
+<h1>Contact Us</h1>
+
+<b>Name:</b>
+<input type="text" name="name" id="name" required><br><br>
+
+<b>Email:</b>
+<input type="email" name="email" id="email" required><br><br>
+
+
+<fieldset class="container">
+<legend>Reason for Contact:</legend>
+<input type="radio" name="reason" value="question" required >General Question<br>
+<input type="radio" name="reason" value="product">Product Recommendations<br>
+<input type="radio" name="reason" value="concern">Skin Concern<br>
+</fieldset>
+<br>
+
+
+<b>Message:</b><br>
+<textarea name="message" id="message" rows="3" cols="60" required></textarea><br><br>
+
+<input type="submit" value="Submit">
+<input type="reset">
+
+</form>
+</main>
+<footer style="text-align:center; color:black; margin-top:40px; padding:10px;">
+<p> For more about us, visit the <a href="about.html">About Page.</a> <br>
+    Email: <a href="mailto:farjana.a@northeastern.edu">farjana.a@northeastern.edu</a>
+</p>
+</footer>
+
+</body>
+</html>
